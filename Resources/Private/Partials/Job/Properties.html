@@ -1,0 +1,56 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-jobs" >
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.title" />
+		</td>
+		<td>
+		{job.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.teaser" />
+		</td>
+		<td>
+		{job.teaser}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.text" />
+		</td>
+		<td>
+		{job.text}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.image" />
+		</td>
+		<td>
+				<f:image src="{job.image.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.file" />
+		</td>
+		<td>
+				<f:for each="{job.file}" as="file" >
+					<a href="{file.originalResource.publicUrl}">
+						{file.originalResource.name}
+					</a>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_jobs_domain_model_job.date" />
+		</td>
+		<td>
+		{job.date -> f:format.date()}
+		</td>
+	</tr>
+</table>
+</html>

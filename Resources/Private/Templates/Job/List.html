@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <h1>Listing for Job</h1>
+
+    <f:flashMessages />
+
+    <table  class="tx_jobs" >
+        <tr>
+            <th><f:translate key="tx_jobs_domain_model_job.title" /></th>
+            <th><f:translate key="tx_jobs_domain_model_job.teaser" /></th>
+            <th><f:translate key="tx_jobs_domain_model_job.text" /></th>
+            <th><f:translate key="tx_jobs_domain_model_job.image" /></th>
+            <th><f:translate key="tx_jobs_domain_model_job.file" /></th>
+            <th><f:translate key="tx_jobs_domain_model_job.date" /></th>
+            <th> </th>
+            <th> </th>
+        </tr>
+
+        <f:for each="{jobs}" as="job">
+            <tr>
+                <td><f:link.action action="show" arguments="{job : job}">{job.title}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{job : job}">{job.teaser}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{job : job}">{job.text}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{job : job}">{job.image.originalResource.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{job : job}">{job.file -> f:count()} file</f:link.action></td>
+                <td><f:link.action action="show" arguments="{job : job}">{job.date -> f:format.date()}</f:link.action></td>
+                <td><f:link.action action="edit" arguments="{job : job}">Edit</f:link.action></td>
+                <td><f:link.action action="delete" arguments="{job : job}">Delete</f:link.action></td>
+            </tr>
+        </f:for>
+    </table>
+
+    <f:link.action action="new">New Job</f:link.action>
+</f:section>
+</html>

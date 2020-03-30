@@ -1,0 +1,30 @@
+
+plugin.tx_jobs_joblist {
+    view {
+        # cat=plugin.tx_jobs_joblist/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:jobs/Resources/Private/Templates/
+        # cat=plugin.tx_jobs_joblist/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:jobs/Resources/Private/Partials/
+        # cat=plugin.tx_jobs_joblist/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:jobs/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_jobs_joblist//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+
+plugin.tx_jobs_jobshow {
+    view {
+        # cat=plugin.tx_jobs_jobshow/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:jobs/Resources/Private/Templates/
+        # cat=plugin.tx_jobs_jobshow/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:jobs/Resources/Private/Partials/
+        # cat=plugin.tx_jobs_jobshow/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:jobs/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_jobs_jobshow//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

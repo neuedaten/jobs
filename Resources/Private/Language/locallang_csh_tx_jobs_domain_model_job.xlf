@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:jobs/Resources/Private/Language/locallang_csh" date="2020-03-30T07:41:04Z" product-name="jobs">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="teaser.description" resname="teaser.description">
+				<source>teaser</source>
+			</trans-unit>
+			<trans-unit id="text.description" resname="text.description">
+				<source>text</source>
+			</trans-unit>
+			<trans-unit id="image.description" resname="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="file.description" resname="file.description">
+				<source>file</source>
+			</trans-unit>
+			<trans-unit id="date.description" resname="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="contact.description" resname="contact.description">
+				<source>contact</source>
+			</trans-unit>
+			<trans-unit id="field.description" resname="field.description">
+				<source>field</source>
+			</trans-unit>
+			<trans-unit id="level.description" resname="level.description">
+				<source>level</source>
+			</trans-unit>
+			<trans-unit id="location.description" resname="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="content.description" resname="content.description">
+				<source>content</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,28 @@
+{
+    "name": "neuedaten/jobs",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 jobs (vacancies) extension.",
+    "authors": [
+        {
+            "name": "Bastian Schwabe",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neuedaten\\Jobs\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neuedaten\\Jobs\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "neuedaten/jobs": "self.version",
+        "typo3-ter/jobs": "self.version"
+    }
+}
